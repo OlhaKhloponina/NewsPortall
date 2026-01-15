@@ -23,10 +23,10 @@ class Controller {
     }
 
     public static function NewsByID($id) {
-        $arr = News::getNewsByID($id);
-        var_dump($arr);
-        die;
-        
+        $n = News::getNewsByID($id);
+        //var_dump($arr);
+        //die;
+
         include_once 'view/readnews.php';
     }
 
@@ -41,7 +41,7 @@ class Controller {
     }
 
     public static function Comments($newsid) {
-        $arr = Comments::getCommentsByNewsID($newsid);
+        $arr = Comments::getCommentByNewsID($newsid);
         ViewComments::CommentsByNews($arr);
     }
 

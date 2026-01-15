@@ -10,7 +10,7 @@ echo "<br>";
 Controller::Comments($_GET['id']);
 
 echo "<br>";
-ViewCommetns::CommentsForm();
+ViewComments::CommentsForm();
 
 
 $content = ob_get_clean();
