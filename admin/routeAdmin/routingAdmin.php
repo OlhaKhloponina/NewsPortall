@@ -19,6 +19,23 @@ elseif ($path == 'logout')
     // Выход
     $response = controllerAdmin::logoutAction();
 }
+
+elseif ($path == 'newsAdmin') {
+    $response = controllerAdminNews::NewsList();
+}
+
+//-----------------------------add news
+elseif($path=="newsAdd"){
+ //   echo "hello world";
+  //  die;
+    $response=controllerAdminNews::newsAddForm();
+}
+
+elseif($path=="newsAddResult"){
+    $response = controllerAdminNews::newsAddResult();
+}
+
+
 else
 {
     // Страница не существует
