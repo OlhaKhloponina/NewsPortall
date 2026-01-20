@@ -30,17 +30,13 @@
                     <td>News title</td>
                     <td>
                         <input type="text" name="title" class="form-control" required
-                               value="<?php echo $detail['title']; ?> readonly>
+                               value=<?php echo $detail['title']; ?> readonly>
                     </td>
 </tr>
 
                 <tr>
                     <td>News text</td>
-                    <td>
-                        <textarea rows="5" name="text" class="form-control" required readonly><?php
-                         echo $detail['text']; ?>
-                        </textarea>
-                    </td>
+                    <td><textarea rows="5" name="text" class='form-control' required readonly><?php  echo $detail['text']; ?></textarea></td>
                 </tr>
 
                 <tr>
@@ -82,23 +78,15 @@
 <tr>
     <td colspan="2">
         <button type="submit" class="btn btn-primary" name="save">
-            <span class="glyphicon glyphicon-plus"></span> Изменить
-        </button>
-        <a href="newsAdmin.php" class="btn btn-large btn-success">
-            <i class="glyphicon glyphicon-backward"></i> Назад к списку</a>
-    </td>
-</tr>
-
-
-<tr>
-    <td colspan="2">
-        <button type="submit" class="btn btn-primary" name="save">
             <span class="glyphicon glyphicon-plus"></span> Удалить
         </button>
         <a href="newsAdmin.php" class="btn btn-large btn-success">
             <i class="glyphicon glyphicon-backward"></i> Назад к списку</a>
     </td>
 </tr>
+
+
+
 
 </table>
 </form>
