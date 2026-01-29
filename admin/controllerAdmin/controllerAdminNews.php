@@ -36,13 +36,14 @@ public static function newsEditForm($id)
     
     $arr = modelAdminCategory::getCategoryList();
 
+
  
     $detail = modelAdminNews::getNewsDetail($id);
 
-       //die;
+    
 
-    //var_dump ($detail);
-
+   // var_dump ($detail);
+   //die;
     include_once('viewAdmin/newsEditForm.php');
 }
 

@@ -76,29 +76,16 @@ public static function getNewsEdit($id) {
             $idCategory = $_POST['idCategory'];
 
             // images type blob
-            $image = $_FILES['picture']['name'];
+            //var_dump ($_FILES);
+            //die;
 
-           // echo $image;
-           // die;
+            $image = null; 
 
-            if ($image == "") {
-
-          //   echo $_FILES['picture']['tmp_name'];
-          //  die;
+            if (isset($_FILES['picture']) && $_FILES['picture']['error'] === UPLOAD_ERR_OK) {
                 $image = addslashes(file_get_contents($_FILES['picture']['tmp_name']));
-
-                  
             }
-
-
-             
-            /* -------- images type text --------
-            $uploadDir = './images/';
-            $uploadFile = $uploadDir . basename($_FILES['picture']['name']);
-            copy($_FILES['picture']['tmp_name'], $uploadFile);
-            */
         }
-            if ($image == "") {
+            if ($image === null) {
                 $sql = "UPDATE `news` SET `title` = '$title', `text` = '$text', 
                         `category_id` = '$idCategory' WHERE `news`.`id` = ".$id;
             } else {

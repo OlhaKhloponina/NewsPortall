@@ -41,6 +41,9 @@ elseif ($path == 'newsEdit' && isset($_GET['id'])) {
 //echo "hello world";
 //die;
     $response = controllerAdminNews::newsEditForm($_GET['id']);
+
+    //var_dump ($response) ;
+   // die;
 }
 
 elseif ($path == 'newsEditResult' && isset($_GET['id'])) {
@@ -49,7 +52,7 @@ elseif ($path == 'newsEditResult' && isset($_GET['id'])) {
 
     $response = controllerAdminNews::newsEditResult($_GET['id']);
     //var_dump ($response);
-    //die;
+   // die;
 
 }
 

@@ -30,7 +30,7 @@
                     <td>News title</td>
                     <td>
                         <input type="text" name="title" class="form-control" required
-                               value="<?php echo $detail['title']; ?> readonly>
+                               value=<?php echo $detail['title']; ?> readonly>
                     </td>
 </tr>
 
@@ -70,14 +70,11 @@
     </div></td>
 </tr>
 <tr>
-
-</tr>
-    <!-- <td>Picture</td>
+    <td>Picture</td>
     <td><div>
-        <input type=file name="picture" style="color:black;"/>
+        <input type="file" name="picture" style="color:black;"/>
     </div></td>
-</tr> -->
-<!-- end image -->
+</tr>
 
 <tr>
     <td colspan="2">
@@ -90,15 +87,7 @@
 </tr>
 
 
-<tr>
-    <td colspan="2">
-        <button type="submit" class="btn btn-primary" name="save">
-            <span class="glyphicon glyphicon-plus"></span> Удалить
-        </button>
-        <a href="newsAdmin.php" class="btn btn-large btn-success">
-            <i class="glyphicon glyphicon-backward"></i> Назад к списку</a>
-    </td>
-</tr>
+
 
 </table>
 </form>

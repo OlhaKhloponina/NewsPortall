@@ -1,0 +1,10 @@
+
+Warning: Undefined array key "picture" in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php on line 82
+
+Warning: Trying to access array offset on value of type null in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php on line 82
+
+Warning: Undefined array key "picture" in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php on line 91
+
+Warning: Trying to access array offset on value of type null in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php on line 91
+
+Fatal error: Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php:91 Stack trace: #0 C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php(91): file_get_contents('') #1 C:\xampp\htdocs\NewsPortal\admin\controllerAdmin\controllerAdminNews.php(52): modelAdminNews::getNewsEdit('4') #2 C:\xampp\htdocs\NewsPortal\admin\routeAdmin\routingAdmin.php(53): controllerAdminNews::newsEditResult('4') #3 C:\xampp\htdocs\NewsPortal\admin\index.php(11): include('C:\\xampp\\htdocs...') #4 {main} thrown in C:\xampp\htdocs\NewsPortal\admin\modelAdmin\modelAdminNews.php on line 91
